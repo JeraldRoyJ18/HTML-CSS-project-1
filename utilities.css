@@ -1,0 +1,377 @@
+.container{
+    max-width:90%;
+    margin:0 2%;
+    padding:0 2%;
+}
+
+
+
+/* the above things are all common to both the pages */
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    position: relative;
+}
+
+
+
+p{
+    margin:0;
+    padding:0;
+}
+
+.main-container{
+    background-color: black;
+    color:white;
+    margin:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    
+}
+
+.header{
+    display: grid;
+     grid-template-columns: 48% 52%;
+       
+}
+
+.header p {
+    display: inline;
+    font-size: 1.5rem;   
+}
+
+.header a{
+    color:white;  
+}
+
+.header a > :first-child{
+    text-decoration: none;
+}
+
+
+.header p > :first-child{
+    word-spacing: 1rem;
+}
+
+.head-1{
+    padding-top:5px;
+}
+
+
+
+.button-1{
+   background-color: black;
+   color:white;
+   width:95%;
+   padding: 10px 2px; 
+   border:2px white solid;
+   border-radius:10px;
+   font-size: 1.4rem;
+   margin-right:20px;
+   margin-left: 50px;
+   
+
+ 
+}
+
+
+
+
+
+.button-1 a,
+.button-2 a{
+    text-decoration: none;
+}
+
+.button-2{
+    background-color: rgb(76,95,213);
+    color:white;
+    width:50%;
+    padding: 10px 3px; 
+    border:2px white solid;
+    font-size:1.4rem;
+    border-radius:10px;
+    border:none;
+    margin-left: 50px;
+   
+
+ }
+
+ .button-3{
+    width:95%;
+    padding: 14px 9px; 
+    font-size: 1.2rem;
+    margin-right:10px;
+    background-color: white;
+    color:grey;
+    border-radius:10px;
+    margin-right: 20px;
+    border: none;
+    margin-left: 25px;
+   
+ }
+
+ .button-1:hover{
+  cursor: pointer;
+ }
+
+ .button-2:hover{
+   cursor: pointer;
+ }
+
+ .head-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+ }
+
+ /* here above we all were working with buttons */
+
+ /* now we will be working on hero part(bluee) */
+
+ .cover{
+    background-color: rgb(218,219,241);
+    color:black;
+    padding:65px 0;
+ }
+ 
+
+ .mini{
+   font-size: 14px;
+   word-spacing: 5px;
+ 
+ }
+
+ .contract{
+    margin-top:20px;
+    font-size: 4.7rem;
+ }
+
+ /* yellow part */
+ .yellow{
+    display: grid;
+    margin-top:80px;
+    grid-template-columns: 70% 30%;
+ }
+
+ .real{
+    display: grid;
+    grid-template-columns: 4% 96%;
+
+ }
+
+ .star{
+    font-size: 1.6em;
+    padding-left:6px;
+ }
+ .real{
+    background-color:rgb(255, 207, 139) ;
+    color:black;
+    border:none;
+    border-radius: 3px;
+    width:80%;
+    padding:20px 0;
+    font-size: 20px;
+    word-spacing: 0.25em;
+ }
+
+ .ul{
+    font-size: 20px;;
+    margin-top:30px;
+    margin-left:30px;
+ }
+
+/* we will be working on all the paragraph part */
+.paragraph{
+    width:51%;
+    font-size: 20px;
+    word-spacing: 0.06em;
+}
+
+.p1{
+    margin-top:40px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.paragraph p{
+    margin:30px 0;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+ /* now we will be working on footer */
+ .foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 1.5em;
+  }
+ 
+  .f2 p:hover{
+    text-decoration: underline;
+  }
+ 
+  footer{
+    margin-top:100px;
+    background-color: black;
+    color:white;
+  }
+ 
+  .head{
+    margin-bottom:1px;
+  }
+ 
+  h2{
+    margin-top:65px;
+  }
+ 
+  .f3{
+    margin-top:260px;
+    margin-bottom:60px;
+    font-size: 1.3em;
+    line-height:1.5em
+  }
+ 
+  .fa-brands{
+    margin-bottom:6px;
+  }
+ 
+  /* now we will be working on some final buttons */
+ 
+  /* .button{
+    background-color:rgb(114, 114, 214) ;
+    color:white;
+    border:none;
+    position: absolute;
+    right:0;
+    
+  } */
+ 
+  /* now we will work on some imp and final button */
+  .imp{
+    color:white;
+    background-color: rgb(76,95,213);
+    border:none;
+    height:50px;
+    width:100px;
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.05rem;
+ 
+  }
+ 
+
+
+
+
+
+
+
+
+ /* here we will be working on media queries */
+ @media(max-width:1200px){
+    .head-2{
+        display: none;
+    }
+
+    .main-container{
+        background-color: black;
+        color:white;
+        margin:0;
+        padding-top:23px;
+        padding-bottom: 23px;
+        
+    }
+
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: space-between;
+        line-height: 1.5em;
+      }
+ }
+
+ @media(max-width:1000px){
+    .yellow{
+        display: grid;
+        margin-top:40px;
+        grid-template-columns: 1fr;
+     }
+
+     .real{
+        background-color:rgb(255, 207, 139) ;
+        color:black;
+        border:none;
+        border-radius: 3px;
+        width:100%;
+        padding:20px 0;
+        font-size: 20px;
+        word-spacing: 0.25em;
+     }
+
+     .paragraph{
+        width:100%;
+        font-size: 20px;
+        word-spacing: 0.06em;
+    }
+ }
+
+ @media(max-width:700px){
+    .real{
+        display: grid;
+        grid-template-columns: 8% 92%;
+    
+     }
+
+     .mass{
+        line-height: 1.5em;
+     }
+     h1{
+        line-height: 1.2em;
+     }
+ }
+
+ @media(max-width:475px){
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-between;
+        line-height: 1.5em;
+      }
+
+      .real{
+        display: grid;
+        grid-template-columns: 15% 85%;
+    
+     }
+ }
+
+ @media(max-width:275px){
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: space-between;
+        line-height: 1.5em;
+      }
+
+      .contract{
+        font-size: 3.3em;
+      }
+
+      .real{
+        display: grid;
+        grid-template-columns: 15% 85%;
+    
+     }
+ }
